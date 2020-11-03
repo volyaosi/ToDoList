@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO.JS</title>
+        <link href="/styles/styles.css" rel="stylesheet">
+        <link href="/images/triangle-favicon.png" rel="icon">
+        <meta name="viewport" content="initial-scale=1.0" />
+    </head>
+    <body>
+        <div class="todo__container">
+            <div class="header__container">
+                <h1 class="header__title">TODO.JS</h1>
+                <h2 class="header__subtitle">Track your tasks</h2>
+            </div>
+
+            <div class="actions">
+                <div class="actions__container">
+                    <input class="search-text input-box" type="text" placeholder="Find task">
+                    <label class="checkbox">
+                        <input type="checkbox" class="hide-completed">
+                        <span> Hide completed</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="tasks__container">
+                <div class="todos"></div>
+                <form class="new-todo">
+                    <input type="text" class="input-box" placeholder="Your new task" name="text" autocomplete="off">
+                    <button class="button">Add Todo</button>
+                </form>
+            </div>
+        </div>
+        
+        <script src="/scripts/uuidv4.js"></script>
+        <script src="/scripts/todo-functions.js"></script>
+        <script src="/scripts/todo-app.js"></script>
+    </body>
+</html>
